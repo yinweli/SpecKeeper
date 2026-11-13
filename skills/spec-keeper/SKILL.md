@@ -1,8 +1,10 @@
 ---
 name: spec-keeper
 description: >
-  Create, organize, review, and maintain software design specifications.
-  Use for specification changes, conflicts, pending decisions, and design consistency.
+  Use when creating, organizing, reviewing, or maintaining software design
+  specification documents, including conflicts, pending decisions, and consistency
+  across specifications. Not for general coding, debugging, or UI changes unless
+  the task also involves specification documents.
 ---
 
 # SpecKeeper
