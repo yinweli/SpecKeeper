@@ -14,8 +14,10 @@
 
 - 規格放在 `Design/`。
 - `Design/` 可直接放文件，也可使用**最多一層分類子目錄**，例如 `Design/會員/登入.md`；不新增更深層分類。
+- `Design/總覽.md` 為入口文件，只列出各規格的連結與一行用途；細節規則寫在負責的文件。
+- 每份規格在 frontmatter 標示 `status`：`定案`、`草稿`、`歷史` 或 `PoC`；只有 `定案` 具權威性。
 - 優先使用 Obsidian；內部文件使用 `[[Wiki Links]]`，外部網站使用一般 Markdown 連結。
-- 未決事項標記 `待確認`，不自行定案。
+- 未決事項使用 Obsidian 標籤 `#待確認`，例如 `#待確認 每日登入獎勵是否可補領？`；不自行定案。
 - 專案若有明確不同規範，以專案規範為準。
 
 ## Repository 結構
@@ -39,8 +41,6 @@ SpecKeeper/
 | Codex | `~/.agents/skills/` | `.agents/skills/` |
 
 例如，安裝後應有 `~/.claude/skills/spec-keeper/SKILL.md` 或 `~/.agents/skills/spec-keeper/SKILL.md`。請依實際工具版本確認讀取路徑與重新載入方式。
-
-GitHub 網頁介面無法直接將 ZIP 內容當作 Repository 檔案使用；請先解壓縮後上傳內容，或在本機初始化 Git 並推送至 GitHub。
 
 ## 使用情境
 

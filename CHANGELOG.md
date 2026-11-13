@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.0 — 降低讀取成本
+
+- 新增入口文件約定 `Design/總覽.md`；Discover 步驟改為先讀總覽，再只讀相關規格。
+- 新增 frontmatter `status`（`定案`、`草稿`、`歷史`、`PoC`）；未標示者視為未確認。
+- 未決事項改用 Obsidian 標籤 `#待確認`，可直接搜尋，不必逐份閱讀。
+- 合併重複規則。
+- 調整 description，限定在涉及規格文件的任務才觸發。
+
 ## v0.1.0 — Initial draft
 
 - 建立精簡的跨專案設計規格管理 Skill。
