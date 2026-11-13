@@ -40,6 +40,7 @@ status: 定案   # 定案 | 草稿 | 歷史 | PoC
 - Give each detailed rule one authoritative location; link to it rather than duplicating it.
 - Identify conflicting rules and their sources. Do not silently choose, merge, or overwrite unresolved alternatives.
 - Incorporate only confirmed, current decisions into `定案` specifications; historical discussions provide context only.
+- Write specifications as current rules only. Do not record change history, reasons for a change, or contrasts with superseded designs (e.g. 「不再區分 A 與 B」); remove superseded concepts entirely. Git keeps the history.
 
 ## Workflow
 
@@ -53,11 +54,11 @@ Apply only the steps relevant to the task; do not scan the entire repository wit
 
 ## Pending Decisions
 
-- Mark unresolved issues with the Obsidian tag `#待確認`, unless the project has an established convention. Find them by searching for `#待確認` rather than reading every document.
-- Write the tag inline with the required decision and enough context to understand it, e.g. `#待確認 每日登入獎勵是否可補領？`.
-- Keep pending issues in the responsible specification; do not create a parallel issue list.
-- Remove the tag only when the user confirms the decision.
-- If no responsible location exists, report the issue instead of inventing a document structure.
+- Record all unresolved issues in one central document, `Design/待決事項.md`, unless the project has an established name or convention. Create it when the first pending item needs recording.
+- Group items by topic. Each item states the required decision with enough context to understand it, e.g. `- 待決：每日登入獎勵是否可補領？`.
+- In the responsible specification, state only that the topic is undecided and link to the pending-decisions document; do not restate the pending item in full.
+- Never write a pending item into a specification as if it were a confirmed rule.
+- When the user confirms a decision, write it into the responsible specification and remove the item from the pending-decisions document.
 
 ## Boundaries
 
@@ -68,4 +69,4 @@ Apply only the steps relevant to the task; do not scan the entire repository wit
 
 ## Completion
 
-Briefly report changed documents, confirmed decisions incorporated, remaining `#待確認` items, affected references, and checks actually performed. Omit irrelevant items.
+Briefly report changed documents, confirmed decisions incorporated, remaining pending items, affected references, and checks actually performed. Omit irrelevant items.
